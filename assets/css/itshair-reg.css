@@ -1,0 +1,64 @@
+.conteudo {
+    overflow-y: hidden;
+    padding: 0px;
+    width: 70%;
+}
+
+.conteudo>form {
+    width: 100%;
+    text-align: center;
+    display: initial;
+}
+
+.padrao>input {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 80%;
+    margin-top: 15px;
+    border-top-width: 0vh;
+    border-left-width: 0vh;
+    border-right-width: 0vh;
+
+}
+
+select,
+input:focus {
+    outline: none;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+
+}
+
+.opcoes>select {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    border-color: #fff;
+    color: #222;
+}
+
+.opcoes>select>option {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.button {
+    margin-top: 40px;
+}
+
+.button>button {
+    padding: 10px;
+    font-size: 1.6rem;
+    border-style: none;
+    background-color: #222;
+    color: #fff;
+}
+
+.button>button:hover {
+    background-color: #325F8A;
+}

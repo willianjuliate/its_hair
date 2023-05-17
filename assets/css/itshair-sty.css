@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: content-box;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+     user-select: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0px;
+    padding: 3px; 
+}
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    font-weight: 450;
+    font-size: 3.5rem;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+.btn-header {
+    all: unset;
+    font-size: 3.8rem;
+    color: #000;
+    cursor: pointer;
+    
+}
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    max-height: 464px;
+    overflow-y: scroll;   
+    padding: 15px;       
+    background-color: #fff;
+}
+.conteudo>form {   
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+
+}
+.conteudo>form>ul {
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 40%; 
+    font-size: 2rem;
+    font-weight: 400;
+   
+}
+.my-ul  input {
+    display: none;
+    position: fixed;
+    z-index: -1;
+}
+.my-ul>li>label{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color:#325F8A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    width: 100%;
+    color: #fff;    
+    cursor: pointer;
+    
+}
+.my-ul input[type="checkbox"]:checked ~ label {
+    background: orange;
+    color: #333;
+    width: 100%;
+}
+
+div.week {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+ul.paginacao {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.paginacao li {display: inline;}
+
+ul.paginacao li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.paginacao li a.active {
+    background-color: #325F8A;
+    color: white;
+}
+ul.paginacao li a:hover:not(.active) {
+    background-color: #919CBf;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}

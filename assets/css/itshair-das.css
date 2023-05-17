@@ -1,0 +1,133 @@
+.agenda {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    height: 50%;
+    max-height: 460px;
+    overflow-y: scroll;
+}
+.agenda>ol {
+    list-style: none;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.agenda>ol>li {
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+    font-weight: 400;
+    padding: 5px;
+}
+.agenda>ol>li>a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+#deletar {
+    color: tomato;
+}
+#editar {
+    color: #325F8A;
+}
+hr {
+    margin: 0px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;  
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal > div {
+  width: 70%;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fff;
+}
+.fechar {
+  position: absolute;
+  width: 30px;
+  right: -15px;
+  top: -20px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background: #ff4545;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #8d0000;
+}
+.modal>div>form>input {
+	text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 15px;
+    border-top-width: 0vh;
+    border-left-width: 0vh;
+    border-right-width: 0vh;
+}
+select,
+.modal>div>form>input:focus {
+    outline: none;
+}
+.opcoes {   
+	display: block;
+    justify-content: flex-start;    
+    margin-top: 30px;
+}
+.opcoes>select {	
+    margin-top: 10px;
+    font-size: 1.5rem;
+    border-color: #fff;
+    color: #222;
+}
+.opcoes>select>option {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+.button {
+    margin-top: 30px;
+}
+
+.button>button {
+    padding: 10px;
+    font-size: 1.6rem;
+    border-style: none;
+    background-color: #222;
+    color: #fff;
+}
+
+.button>button:hover {
+    background-color: #325F8A;
+}
+h1 {
+	font-size: 2.5rem;
+}
+.container {
+	display: flex;
+    justify-content: center;
+    height: 50%;
+    height: 50%;
+    margin-top: 4%;
+}
+.container img {
+    max-width:65px;
+    max-height:65px;      
+    width: auto;
+    height: auto;
+}
